@@ -1,0 +1,68 @@
+.futura {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.pt-sans {
+  font-family: "PT Sans", sans-serif;
+}
+
+.secular-one {
+  font-family: "Secular One", sans-serif;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.img-web {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 30% cover 40%;
+}
+
+.slider {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden; /* Add overflow hidden to contain items within the slider */
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+  /* Apply animation to the whole list */
+}
+
+.slider .list div {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 9s linear infinite;
+  animation-delay: var(--position);
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Pojok Rejeki</title>
+    <link rel="stylesheet" href="./style/output.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F6F8F7] overflow-x-hidden">
+    <div
+      id="overlay-side"
+      class="w-screen h-screen bg-black opacity-35 fixed z-40 hidden"
+      onclick="tutup()"
+    ></div>
+
+    <aside
+      id="menuBar"
+      class="fixed top-0 w-64 bg-[#F6F8F7] shadow-2xl h-screen -right-64 z-50"
+    >
+      <ul>
+        <li class="w-full flex justify-end p-4">
+          <button class="flex justify-end" onclick="tutup()">
+            <img
+              src="./Assets/cross-square-svgrepo-com.svg"
+              alt=""
+              class="w-5 h-5 grayscale"
+            />
+          </button>
+        </li>
+        <li class="pt-sans text-lg font-semibold px-3">
+          <a href="#beranda">Beranda</a>
+        </li>
+        <li class="pt-sans text-lg font-semibold px-3 pt-2">
+          <a href="#layanan">Layanan</a>
+        </li>
+        <li class="pt-sans text-lg font-semibold px-3 pt-2">
+          <a href="#tentangKami">Tentang Kami</a>
+        </li>
+      </ul>
+    </aside>
+
+    <nav id="navbar-web" class="w-full sticky top-0 z-10">
+      <div class="container">
+        <div class="flex justify-between laptop:px-7 relative">
+          <div class="px-3 py-4 laptop:px-3 laptop:py-8">
+            <a href="#beranda" class="secular-one text-xl laptop:text-2xl"
+              >Pojok Rejeki</a
+            >
+          </div>
+          <div class="hamburger flex">
+            <button class="mr-3" onclick="action()">
+              <span class="w-[20px] h-[2px] bg-black block my-1"></span>
+              <span class="w-[20px] h-[2px] bg-black block my-1"></span>
+              <span class="w-[20px] h-[2px] bg-black block my-1"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="beranda" class="pt-16">
+      <div class="container">
+        <div
+          class="flex flex-wrap tablet:justify-center laptop:flex-row-reverse laptop:items-center laptop:px-10 laptop:m-auto items-center justify-between"
+        >
+          <div class="pb-5 laptop:w-1/2">
+            <h1
+              class="futura text-4xl font-semibold px-3 pt-3 tablet:text-center laptop:text-left laptop:text-5xl"
+            >
+              Kami Melayani Kebutuhan Anda
+            </h1>
+            <p
+              class="futura text-sm font-extralight px-4 pt-2 py-4 tablet:text-center laptop:text-left laptop:ps-4 laptop:pe-44"
+            >
+              Isi pulsa, Aneka snack dan minuman, Telor, Minyak, Beras , Dan
+              lain sebagainnya
+            </p>
+            <div class="tablet:text-center laptop:text-left">
+              <a
+                href="https://wa.me/6285159722546"
+                target="_blank"
+                class="bg-gradient-to-r from-[#09F67C] to-[#5C84EB] px-4 py-2 mx-3 my-3 tablet:text-center rounded-2xl futura text-xs font-semibold laptop:text-sm duration-300 shadow-xl hover:shadow-lg hover:duration-300 hover:shadow-cyan-500"
+                >Info Lebih Lanjut</a
+              >
+            </div>
+          </div>
+          <div class="p-3 laptop:w-1/2">
+            <img
+              src="./Assets/IMG_20240604_104056_kompres.jpg"
+              alt="image-store"
+              class="rounded-lg w-full h-full shadow-2xl img-web"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="corouesel"
+      class="slider mt-24"
+      style="--width: 150px; --height: 50px; --quantity: 9"
+    >
+      <div class="list">
+        <div
+          style="--position: 1s"
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          style="--position: 2s"
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+          style="--position: 3s"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+          style="--position: 4s"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+          style="--position: 5s"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+          style="--position: 6s"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+          style="--position: 7s"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+          style="--position: 8s"
+        >
+          Toko Pojok Rejeki
+        </div>
+        <div
+          class="roboto font-bold bg-transparent border-[#94939300] p-2 rounded-md item"
+          style="--position: 9s"
+        >
+          Toko Pojok Rejeki
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="pt-36 pb-36">
+      <div class="container">
+        <h2 class="text-center inter font-bold text-lg tablet:text-xl">
+          Layanan
+        </h2>
+        <p
+          class="futura text-center font-extralight text-xs tablet:text-sm laptop:text-base laptop:font-extralight"
+        >
+          Beberapa produk dan layanan yang ada di toko kami
+        </p>
+        <div
+          class="grid grid-cols-2 mobileL:px-8 tablet:grid-cols-4 tablet:gap-0"
+        >
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/8.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">
+              Isi Pulsa & TopUp Game
+            </p>
+          </div>
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/1.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">
+              Alat Tulis
+            </p>
+          </div>
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/5.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">
+              Kebutuhan Pokok
+            </p>
+          </div>
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/6.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">
+              Minuman Sachet
+            </p>
+          </div>
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/4.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">Bensin</p>
+          </div>
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/3.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">
+              Aksesoris
+            </p>
+          </div>
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/2.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">
+              Sabun Cuci
+            </p>
+          </div>
+          <div class="pt-8 img-web">
+            <img
+              src="./Assets/7.png"
+              alt=""
+              class="w-24 h-24 m-auto rounded-lg hover:scale-150 hover:duration-300 duration-300 hover:ease-in-out"
+            />
+            <p class="futura text-xs font-semibold text-center pt-2">
+              Aneka Snack
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentangKami" class="pb-36">
+      <div class="container">
+        <div
+          class="flex flex-wrap tablet:flex-nowrap tablet:items-center tablet:gap-3"
+        >
+          <div
+            class="w-full h-96 flex justify-center items-end tablet:justify-end p-2 tablet:items-center tablet:w-1/2 bg-gradient-to-r from-green-bg to-blue-bg rounded-bl-xl rounded-br-xl tablet:rounded-tr-lg tablet:rounded-bl-none mx-2 shadow-lg"
+          >
+            <h1 class="inter font-bold text-center text-4xl bottom-0">2001</h1>
+          </div>
+          <div class="pt-5 tablet:pt-0 tablet:w-1/2">
+            <p class="futura text-center font-base mx-2">
+              Toko kami telah berdiri mulai dari tahun 2001 hingga sekarang ,
+              yang berletak di Perumahan Bedali Agung, RT. 02, RW.12 Blok B No
+              3. dengan dulu kami juga memiliki warung mie ayam sebagai
+              pendamping dari toko kami. Hingga sekarang toko ini masih terlihat
+              seperti original seperti dulu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="operasionalTime" class="pb-36">
+      <div class="container">
+        <div
+          class="bg-gradient-to-r from-green-bg to-blue-bg w-3/4 m-auto rounded-xl shadow-xl"
+        >
+          <div class="flex justify-center px-6 pt-6 pb-4">
+            <p
+              class="w-max inter text-center font bg-[#5C84EB] px-6 py-1 font-bold rounded-xl"
+            >
+              Jam Operasional
+            </p>
+          </div>
+
+          <h3 class="roboto font-bold text-xl tablet:text-2xl text-center">
+            06.30 WIB
+          </h3>
+          <h3 class="roboto font-bold text-xl tablet:text-2xl text-center">
+            -
+          </h3>
+          <h3 class="roboto font-bold text-xl tablet:text-2xl text-center pb-6">
+            22.00 WIB
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="footerInformation"
+      class="bg-gradient-to-r from-blue-footer to-green-footer py-10"
+    >
+      <div class="container">
+        <div class="w-full px-4">
+          <h2 class="roboto uppercase text-xl font-bold text-black">
+            Toko Pojok Rejeki
+          </h2>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full pt-4 px-4 tablet:w-1/3">
+            <h3 class="roboto font-semibold text-black tracking-wide">
+              Alamat
+            </h3>
+            <p
+              class="text-black roboto tracking-wide text-sm pt-sans pt-1 font-semibold"
+            >
+              Jl. Yos Sudarso , Perumahan Istana Bedali Agung Blok B No. 3, RT.
+              02, RW. 12, Kab. Malang, East Java, Indonesia
+            </p>
+          </div>
+          <div class="w-full pt-4 px-4 tablet:w-1/3">
+            <h3 class="roboto font-semibold text-black tracking-wide">
+              Kontak
+            </h3>
+            <p
+              class="text-black roboto tracking-wide text-sm pt-sans pt-1 font-semibold"
+            >
+              +62 851 5972 2546
+            </p>
+            <p
+              class="text-black roboto tracking-wide text-sm pt-sans font-semibold"
+            >
+              rilkayt@gmail.com
+            </p>
+          </div>
+          <div class="w-full px-4 pt-4 flex flex-col tablet:w-1/3">
+            <a
+              class="text-black roboto tracking-wide text-sm pt-sans font-semibold pb-3 hover:text-white hover:duration-300 duration-300"
+              href="#beranda"
+            >
+              Beranda
+            </a>
+            <a
+              class="text-black roboto tracking-wide text-sm pt-sans font-semibold pb-3 hover:text-white hover:duration-300 duration-300"
+              href="#layanan"
+            >
+              Layanan
+            </a>
+            <a
+              class="text-black roboto tracking-wide text-sm pt-sans font-semibold pb-3 hover:text-white hover:duration-300 duration-300"
+              href="#tentangKami"
+            >
+              Tentang Kami
+            </a>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="border-black opacity-60 border-t-2 h-2 w-full my-5"></div>
+          <p
+            class="pt-sans text-center tracking-wide font-semibold text-gray-700 text-sm"
+          >
+            Dibuat oleh
+            <a
+              class="text-pink-800 font-bold hover:text-white hover:duration-300 duration-300 hover:shadow-xl"
+              href="https://www.instagram.com/rilka_yt/?hl=id"
+              target="_blank"
+              >Rifki Ilham Lutfika</a
+            >
+            bersama
+            <a
+              class="text-blue-950 font-bold hover:text-white hover:duration-300 duration-300 hover:shadow-xls"
+              href="https://www.instagram.com/diwebin.id/?hl=id"
+              target="_blank"
+              >diwebin.id</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let btnMenu = document.getElementById("menuBar");
+      let overlaySide = document.getElementById("overlay-side");
+
+      let condition = false;
+      function action() {
+        btnMenu.classList.remove("-right-64");
+        btnMenu.classList.add("right-0");
+        btnMenu.classList.add("duration-500");
+        document.body.classList.add("overflow-hidden");
+        overlaySide.classList.remove("hidden");
+      }
+
+      function tutup() {
+        btnMenu.classList.remove("right-0");
+        btnMenu.classList.add("-right-64");
+        document.body.classList.remove("overflow-hidden");
+        overlaySide.classList.add("hidden");
+      }
+
+      window.onscroll = () => {
+        const nav = document.querySelector("nav");
+        const fixedNav = nav.offsetTop;
+
+        if (fixedNav >= 5) {
+          nav.classList.add("backdrop-blur-sm");
+          nav.classList.add("duration-300");
+          nav.classList.add("shadow-md");
+        } else {
+          nav.classList.remove("backdrop-blur-sm");
+          nav.classList.add("duration-300");
+          nav.classList.remove("shadow-md");
+        }
+      };
+    </script>
+  </body>
+</html>
